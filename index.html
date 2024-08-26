@@ -41,10 +41,10 @@
   </style>
 </head>
 
-<body class="font-manrope ">
+<body class="font-manrope overflow-x-hidden">
   <header class="mt-10 md:container mx-auto ">
     <nav>
-      <div class="navbar bg-base-100">
+      <div class="navbar bg-[#FFFFFF]">
         <div class="navbar-start mr-5 md:mr-20">
           <button class="btn btn-circle size-4.5 bg-[#ABEF5F]">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -56,7 +56,7 @@
         </div>
         <div class="navbar-center hidden lg:flex mr-5 md:mr-32">
           <ul class="menu menu-horizontal px-1">
-            <li><a>Home</a></li>
+            <li  class="font-extrabold"><a>Home</a></li>
             <li><a>Services</a></li>
             <li><a>Portfolio</a></li>
             <li><a>Blogs</a></li>
@@ -95,7 +95,7 @@
             </svg>
           </div>
           <ul tabindex="0"
-            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 ">
             <li><a>Home</a></li>
             <li><a>Services</a></li>
             <li><a>Portfolio</a></li>
@@ -243,18 +243,18 @@
           rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
       </div>
       <div class="grid grid-cols-1 lg:grid-cols-3 auto-rows-[300px] gap-3 my-10 mt-10 lg:mt-20">
-          <div class="card card-side bg-[#FFFFFF] border-solid border-2 border-[#E9E9E9] h-auto lg:h-52 col-span-1 lg:col-span-2">
+          <div class="card card-side bg-[#FFFFFF] border-solid border-2 border-[#E9E9E9] h-auto ml-20 lg:h-52 col-span-1 lg:col-span-2">
             <figure class="ml-5">
-              <img src="./assets/img1.png" alt="" class="w-full lg:w-64 mx-10 mt-5 mb-5">
+              <img src="./assets/img1.png" alt="" class="w-full lg:w-72 mx-10 md:mt-5 mb-5">
             </figure>
             <div class="card-body ">
-              <h2 class="card-title text-[#494949] font-extrabold text-sm lg:text-base -mt-5">Commercial</h2>
+              <h2 class="card-title text-[#494949] font-extrabold text-sm lg:text-base mt-28 md:-mt-5">Commercial</h2>
               <p class="text-[#737373] text-xs font-medium mb-5">The barn house captivates with its blend of rustic
                 charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
                 <div class="flex gap-2 mt-5 lg:mt-20">
-                    <p class="text-base font-extrabold">View Details</p>
+                    <p class="text-base font-extrabold md:-mt-20 gap-2">View Details</p>
                   <div class="-mt-24">
-                    <button class="btn btn-circle size-4.5 bg-[#ABEF5F]">
+                    <button class="btn btn-circle size-4.5 bg-[#ABEF5F] md:-ml-80">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
@@ -274,9 +274,9 @@
             <img src="./assets/img3.png" alt="" class="w-full lg:w-64 h-auto lg:h-40 rounded-xl ml-2">
           </figure>
         </div>
-        <div class="card card-side bg-[#FFFFFF] border-solid border-2 border-[#E9E9E9] w-full lg:w-80 h-auto lg:h-52 -ml-0 lg:-ml-7 -mt-5 lg:-mt-20">
+        <div class="card card-side bg-[#FFFFFF] border-solid border-2 border-[#E9E9E9] w-full lg:w-96 h-auto lg:h-52 -ml-0 lg:ml-2  -mt-5 lg:-mt-20">
           <figure class="ml-5">
-            <img src="./assets/img4.png" alt="" class="w-full lg:w-72 p-10 m-10">
+            <img src="./assets/img4.png" alt="" class="w-full lg:w-80 p-10 m-10">
           </figure>
           <div class="card-body">
             <h2 class="card-title text-[#494949] font-extrabold text-sm lg:text-base">Commercial</h2>
@@ -291,13 +291,56 @@
             </button>
           </div>
         </div>
-        <div class="card card-side bg-[#FFFFFF] border-solid border-2 border-[#E9E9E9] w-full lg:w-80 h-auto lg:h-52 -ml-0 lg:-ml-7 -mt-5 lg:-mt-20">
+        <div class="card card-side bg-[#FFFFFF] border-solid border-2 border-[#E9E9E9] w-full lg:w-80 h-auto lg:h-52 -ml-0  -mt-5 lg:-mt-20">
           <figure class="ml-5">
-            <img src="./assets/img5.png" alt="" class="w-full lg:w-72 p-10 m-10">
+            <img src="./assets/img5.png" alt="" class="w-full lg:w-80 p-10 m-10">
           </figure>
         </div>
       </div>
     </section>
+
+    <!-- Our house collection section -->
+     <h1 class="text-5xl font-extrabold text-center mb-3">Our house collection</h1>
+     <p class="text-base font-bold text-gray-500 text-center mb-10">This section describes our working capabilities to design all those beautiful houses and this also shows our efficiency.</p>
+    <div class="carousel w-full">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img
+          src="./assets/h1.jpg"
+          class="w-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide2" class="carousel-item relative w-full">
+        <img
+          src="./assets/h2.jpg"
+          class="w-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide3" class="carousel-item relative w-full">
+        <img
+          src="./assets/h3.jpg"
+          class="w-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide4" class="carousel-item relative w-full">
+        <img
+          src="./assets/h4.jpg"
+          class="w-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+
 
       <!-- Read our article and news section -->
     <section class="bg-base-200 mt-10 w-full pt-10">
@@ -396,7 +439,7 @@
 
     <!-- Lets connect section -->
     <section class=" mt-10 w-full ">
-    <div class="bg-cover pt-20 pb-20"style="background-image: url('./assets/bg.jpg');">
+    <div class="bg-cover pt-20 pb-20 "style="background-image: url('./assets/bg.jpg');">
       <button class="btn btn-wide rounded-3xl bg-[#ABEF5F33] flex justify-center items-center mx-auto"><i
         class="fa-solid fa-arrow-right"></i>Let’s Connect</button>
         <h1 class="text-[#212121] text-4xl font-bold text-center mt-5">Let’s Discuss Next Project</h1>
